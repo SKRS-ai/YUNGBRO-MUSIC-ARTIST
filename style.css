@@ -200,3 +200,81 @@ body, html {
         grid-template-columns: 1fr;
     }
 }
+/* Visuals Page Specifics */
+.visuals-page {
+    background: #050505;
+}
+
+.visuals-container {
+    padding: 60px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.visuals-header {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.video-matrix {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.feed-item {
+    background: #111;
+    border: 1px solid #1aff1a44; /* Faded Neon Green */
+    padding: 5px;
+    transition: 0.3s ease;
+}
+
+.feed-item:hover {
+    border-color: #1aff1a;
+    box-shadow: 0 0 15px rgba(26, 255, 26, 0.2);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(20%);
+}
+
+.feed-meta {
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.cam-label {
+    color: #1aff1a;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Scanline Effect Overlay (Optional) */
+.visuals-page::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 999;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
