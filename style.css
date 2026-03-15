@@ -94,3 +94,109 @@ body, html {
     opacity: 0.4;
     letter-spacing: 5px;
 }
+/* EPK Page Specifics */
+.epk-page {
+    background: #000;
+    color: #fff;
+    overflow-y: auto;
+}
+
+.epk-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 1px solid #1aff1a; /* Neon Green Border */
+    font-size: 0.8rem;
+}
+
+.epk-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.glitch-text {
+    font-size: 4rem;
+    color: #1aff1a;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    letter-spacing: 5px;
+    opacity: 0.6;
+    margin-bottom: 40px;
+}
+
+.bio-content h2 {
+    border-left: 3px solid #1aff1a;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.bio-content p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.stats-box {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.stat span {
+    color: #1aff1a;
+    font-weight: bold;
+}
+
+.epk-sidebar {
+    background: #0a0a0a;
+    padding: 30px;
+    border: 1px solid #222;
+}
+
+.media-section h3 {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: #1aff1a;
+    margin-bottom: 20px;
+}
+
+.download-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.download-list li {
+    margin-bottom: 12px;
+}
+
+.download-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.download-list a:hover {
+    color: #1aff1a;
+    padding-left: 5px;
+}
+
+.contact-card p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    .epk-grid {
+        grid-template-columns: 1fr;
+    }
+}
