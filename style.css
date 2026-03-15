@@ -278,3 +278,93 @@ body, html {
     background-size: 100% 2px, 3px 100%;
     pointer-events: none;
 }
+/* Store Page Styling */
+.store-page {
+    background: #000;
+    color: #fff;
+}
+
+.store-container {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.supply-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.product-item {
+    background: #0a0a0a;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.product-item:hover {
+    border-color: #1aff1a;
+    transform: translateY(-5px);
+}
+
+.product-preview {
+    height: 300px;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #222;
+}
+
+.stock-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #1aff1a;
+    color: #000;
+    font-size: 0.6rem;
+    padding: 2px 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.placeholder {
+    font-weight: bold;
+    color: #222;
+    letter-spacing: 4px;
+}
+
+.product-details {
+    padding: 25px;
+    text-align: center;
+}
+
+.product-details h3 {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.cost {
+    color: #1aff1a;
+    font-family: 'Courier New', monospace;
+    margin-bottom: 20px;
+}
+
+.btn-purchase {
+    display: block;
+    border: 1px solid #1aff1a;
+    color: #1aff1a;
+    text-decoration: none;
+    padding: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-purchase:hover {
+    background: #1aff1a;
+    color: #000;
+}
