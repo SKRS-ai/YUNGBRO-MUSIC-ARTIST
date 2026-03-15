@@ -368,3 +368,106 @@ body, html {
     background: #1aff1a;
     color: #000;
 }
+/* Live Page Styles */
+.live-page {
+    background-color: #030303;
+}
+
+.live-container {
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tour-list {
+    margin-top: 50px;
+}
+
+.tour-item {
+    display: flex;
+    align-items: center;
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid #222;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.active-target:hover {
+    border-color: #1aff1a;
+    background: rgba(26, 255, 26, 0.05);
+}
+
+.date-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+    border-right: 1px solid #333;
+    margin-right: 30px;
+}
+
+.date-box .day {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #1aff1a;
+}
+
+.date-box .month {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.venue-info {
+    flex-grow: 1;
+}
+
+.venue-info h3 {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.venue-info p {
+    font-size: 0.75rem;
+    color: #666;
+    font-family: 'Courier New', monospace;
+    margin-top: 5px;
+}
+
+.status {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.tag {
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    background: rgba(26, 255, 26, 0.2);
+    color: #1aff1a;
+    border: 1px solid #1aff1a;
+}
+
+.archived {
+    background: rgba(255, 255, 255, 0.1);
+    color: #555;
+    border-color: #333;
+}
+
+.btn-ticket {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.7rem;
+    padding: 8px 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-ticket:hover {
+    background: #1aff1a;
+}
