@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+    font-family: 'Orbitron', sans-serif; /* Tech-focused font */
+    color: #fff;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: grayscale(40%) contrast(120%); /* Custom aesthetic for YungBro */
+}
+
+.video-background iframe {
+    width: 100vw;
+    height: 100vh;
+    transform: scale(1.6); /* Hide YouTube UI */
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 20px;
+    background: radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
+    text-align: center;
+}
+
+.artist-brand h1 {
+    font-size: 5rem;
+    margin: 0;
+    letter-spacing: 15px;
+    font-weight: 900;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.status-indicator {
+    color: #00ff00; /* Neon green live indicator */
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 18px 50px;
+    min-width: 280px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.primary {
+    border: 1px solid #00ff00;
+    color: #00ff00;
+}
+
+.purchase {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.m3-tag {
+    font-size: 0.6rem;
+    opacity: 0.4;
+    letter-spacing: 5px;
+}
